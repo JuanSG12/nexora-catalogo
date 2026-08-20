@@ -1,0 +1,13 @@
+node_modules/
+.env
+*.log
+.DS_Store
+Thumbs.db
+
+# La base de datos se genera con "npm run seed" (ver README) — no se versiona el binario
+database/*.sqlite
+database/backup/*.sql
+
+# Fotos originales sin optimizar (42MB); las copias optimizadas usadas por el sitio
+# ya están en frontend/assets/img/devices/*.jpg
+frontend/assets/img/devices/fotos-reales/

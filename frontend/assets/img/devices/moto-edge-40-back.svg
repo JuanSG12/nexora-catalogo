@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs>
+    <radialGradient id="sombra-moto-edge-40-back" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a0e1a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="320" fill="none"/>
+  <ellipse cx="200" cy="278" rx="120" ry="18" fill="url(#sombra-moto-edge-40-back)"/>
+  
+    <defs>
+      <linearGradient id="cuerpo-moto-edge-40-back" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="rgb(64, 180, 107)"/>
+        <stop offset="55%" stop-color="#16a34a"/>
+        <stop offset="100%" stop-color="rgb(15, 114, 52)"/>
+      </linearGradient>
+    </defs>
+    <rect x="140" y="30" width="120" height="240" rx="26" fill="url(#cuerpo-moto-edge-40-back)"/>
+    <rect x="150" y="45" width="60" height="60" rx="16" fill="#05070d" opacity="0.28"/>
+    <circle cx="167" cy="62" r="10" fill="#05070d" opacity="0.55"/>
+    <circle cx="167" cy="62" r="5.5" fill="#7dd3fc" opacity="0.5"/>
+    <circle cx="193" cy="62" r="10" fill="#05070d" opacity="0.55"/>
+    <circle cx="193" cy="62" r="5.5" fill="#7dd3fc" opacity="0.5"/>
+    <circle cx="167" cy="88" r="10" fill="#05070d" opacity="0.55"/>
+    <circle cx="167" cy="88" r="5.5" fill="#7dd3fc" opacity="0.5"/>
+    <circle cx="200" cy="150" r="10" fill="#ffffff" opacity="0.14"/>
+    <rect x="146" y="35" width="30" height="230" rx="20" fill="#ffffff" opacity="0.1"/>
+  
+</svg>

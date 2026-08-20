@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs>
+    <radialGradient id="sombra-macbook-pro-14-back" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a0e1a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="320" fill="none"/>
+  <ellipse cx="200" cy="278" rx="120" ry="18" fill="url(#sombra-macbook-pro-14-back)"/>
+  
+    <defs>
+      <linearGradient id="tapa-macbook-pro-14-back" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgb(96, 107, 122)"/>
+        <stop offset="100%" stop-color="rgb(35, 44, 58)"/>
+      </linearGradient>
+    </defs>
+    <path d="M60,50 L340,50 L352,222 L48,222 Z" fill="url(#tapa-macbook-pro-14-back)"/>
+    <circle cx="200" cy="130" r="16" fill="#ffffff" opacity="0.16"/>
+    <circle cx="200" cy="130" r="6" fill="#ffffff" opacity="0.4"/>
+    <rect x="60" y="50" width="280" height="26" fill="#ffffff" opacity="0.08"/>
+    <path d="M40,222 L360,222 L372,248 L28,248 Z" fill="rgb(31, 39, 51)"/>
+  
+</svg>

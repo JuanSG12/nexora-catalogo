@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 790" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="uno" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto">
+      <path d="M2,3 L7,7 L2,11" stroke="#334155" stroke-width="1.4" fill="none"/>
+    </marker>
+  </defs>
+
+  <rect width="1180" height="790" fill="#f3f4f9"/>
+  <text x="30" y="36" font-size="22" font-weight="700" fill="#0a0e1a">Modelo Entidad-Relación — Nexora</text>
+  <text x="30" y="58" font-size="13" fill="#64748b">Catálogo de dispositivos inteligentes (celulares y portátiles)</text>
+
+  <!-- MARCAS -->
+  <g transform="translate(30,100)">
+    <rect width="230" height="150" rx="10" fill="#ffffff" stroke="#e7e9f2" stroke-width="1.5"/>
+    <rect width="230" height="34" rx="10" fill="#0a0e1a"/>
+    <rect y="20" width="230" height="14" fill="#0a0e1a"/>
+    <text x="12" y="23" font-size="13.5" font-weight="700" fill="#ffffff">MARCAS</text>
+    <text x="12" y="52" font-size="12" fill="#0a0e1a">🔑 id_marca (PK)</text>
+    <text x="12" y="72" font-size="12" fill="#334155">nombre (UNIQUE)</text>
+    <text x="12" y="92" font-size="12" fill="#334155">logo_url</text>
+    <text x="12" y="112" font-size="12" fill="#334155">created_at</text>
+  </g>
+
+  <!-- TIPOS_DISPOSITIVO -->
+  <g transform="translate(30,320)">
+    <rect width="230" height="130" rx="10" fill="#ffffff" stroke="#e7e9f2" stroke-width="1.5"/>
+    <rect width="230" height="34" rx="10" fill="#0a0e1a"/>
+    <rect y="20" width="230" height="14" fill="#0a0e1a"/>
+    <text x="12" y="23" font-size="13.5" font-weight="700" fill="#ffffff">TIPOS_DISPOSITIVO</text>
+    <text x="12" y="52" font-size="12" fill="#0a0e1a">🔑 id_tipo (PK)</text>
+    <text x="12" y="72" font-size="12" fill="#334155">nombre (UNIQUE)</text>
+    <text x="12" y="92" font-size="12" fill="#334155">created_at</text>
+  </g>
+
+  <!-- DISPOSITIVOS -->
+  <g transform="translate(420,90)">
+    <rect width="300" height="400" rx="10" fill="#ffffff" stroke="#ff6a1a" stroke-width="2"/>
+    <rect width="300" height="34" rx="10" fill="#ff6a1a"/>
+    <rect y="20" width="300" height="14" fill="#ff6a1a"/>
+    <text x="12" y="23" font-size="13.5" font-weight="700" fill="#ffffff">DISPOSITIVOS</text>
+    <text x="12" y="52" font-size="12" fill="#0a0e1a">🔑 id_dispositivo (PK)</text>
+    <text x="12" y="72" font-size="12" fill="#334155">nombre</text>
+    <text x="12" y="92" font-size="12" fill="#0a0e1a">🔗 id_marca (FK → MARCAS)</text>
+    <text x="12" y="112" font-size="12" fill="#0a0e1a">🔗 id_tipo (FK → TIPOS_DISPOSITIVO)</text>
+    <text x="12" y="132" font-size="12" fill="#334155">fecha_lanzamiento</text>
+    <text x="12" y="152" font-size="12" fill="#334155">precio</text>
+    <text x="12" y="172" font-size="12" fill="#334155">imagen_url</text>
+    <text x="12" y="192" font-size="12" fill="#334155">descripcion</text>
+    <text x="12" y="212" font-size="12" fill="#334155">procesador</text>
+    <text x="12" y="232" font-size="12" fill="#334155">ram</text>
+    <text x="12" y="252" font-size="12" fill="#334155">almacenamiento</text>
+    <text x="12" y="272" font-size="12" fill="#334155">pantalla</text>
+    <text x="12" y="292" font-size="12" fill="#334155">bateria</text>
+    <text x="12" y="312" font-size="12" fill="#334155">sistema_operativo</text>
+    <text x="12" y="332" font-size="12" fill="#334155">camara · color</text>
+    <text x="12" y="352" font-size="12" fill="#334155">stock · activo</text>
+    <text x="12" y="372" font-size="12" fill="#334155">created_at · updated_at</text>
+  </g>
+
+  <!-- COMENTARIOS -->
+  <g transform="translate(860,150)">
+    <rect width="280" height="190" rx="10" fill="#ffffff" stroke="#e7e9f2" stroke-width="1.5"/>
+    <rect width="280" height="34" rx="10" fill="#0a0e1a"/>
+    <rect y="20" width="280" height="14" fill="#0a0e1a"/>
+    <text x="12" y="23" font-size="13.5" font-weight="700" fill="#ffffff">COMENTARIOS</text>
+    <text x="12" y="52" font-size="12" fill="#0a0e1a">🔑 id_comentario (PK)</text>
+    <text x="12" y="72" font-size="12" fill="#0a0e1a">🔗 id_dispositivo (FK)</text>
+    <text x="12" y="92" font-size="12" fill="#334155">nombre_usuario</text>
+    <text x="12" y="112" font-size="12" fill="#334155">correo_usuario</text>
+    <text x="12" y="132" font-size="12" fill="#334155">comentario</text>
+    <text x="12" y="152" font-size="12" fill="#334155">calificacion (1-5) · aprobado</text>
+    <text x="12" y="172" font-size="12" fill="#334155">fecha_creacion</text>
+  </g>
+
+  <!-- IMAGENES_DISPOSITIVO -->
+  <g transform="translate(460,560)">
+    <rect width="260" height="140" rx="10" fill="#ffffff" stroke="#e7e9f2" stroke-width="1.5"/>
+    <rect width="260" height="34" rx="10" fill="#0a0e1a"/>
+    <rect y="20" width="260" height="14" fill="#0a0e1a"/>
+    <text x="12" y="23" font-size="13.5" font-weight="700" fill="#ffffff">IMAGENES_DISPOSITIVO</text>
+    <text x="12" y="52" font-size="12" fill="#0a0e1a">🔑 id_imagen (PK)</text>
+    <text x="12" y="72" font-size="12" fill="#0a0e1a">🔗 id_dispositivo (FK)</text>
+    <text x="12" y="92" font-size="12" fill="#334155">url · etiqueta</text>
+    <text x="12" y="112" font-size="12" fill="#334155">orden · created_at</text>
+  </g>
+  <line x1="570" y1="490" x2="570" y2="560" stroke="#334155" stroke-width="1.5" marker-end="url(#uno)"/>
+  <text x="578" y="505" font-size="12" fill="#0a0e1a">1</text>
+  <text x="578" y="555" font-size="12" fill="#0a0e1a">N</text>
+
+  <!-- ADMINISTRADORES -->
+  <g transform="translate(860,470)">
+    <rect width="280" height="150" rx="10" fill="#ffffff" stroke="#14b8a6" stroke-width="1.5"/>
+    <rect width="280" height="34" rx="10" fill="#14b8a6"/>
+    <rect y="20" width="280" height="14" fill="#14b8a6"/>
+    <text x="12" y="23" font-size="13.5" font-weight="700" fill="#ffffff">ADMINISTRADORES</text>
+    <text x="12" y="52" font-size="12" fill="#0a0e1a">🔑 id_admin (PK)</text>
+    <text x="12" y="72" font-size="12" fill="#334155">usuario (UNIQUE)</text>
+    <text x="12" y="92" font-size="12" fill="#334155">password_hash (bcrypt)</text>
+    <text x="12" y="112" font-size="12" fill="#334155">nombre_completo · rol</text>
+    <text x="12" y="132" font-size="12" fill="#334155">created_at</text>
+  </g>
+  <text x="900" y="650" font-size="11.5" fill="#94a3b8" font-style="italic">
+    Entidad independiente — autenticación del panel de administración
+  </text>
+
+  <!-- Relaciones -->
+  <line x1="260" y1="150" x2="420" y2="200" stroke="#334155" stroke-width="1.5" marker-end="url(#uno)"/>
+  <text x="270" y="165" font-size="12" fill="#0a0e1a">1</text>
+  <text x="400" y="195" font-size="12" fill="#0a0e1a">N</text>
+
+  <line x1="260" y1="370" x2="420" y2="330" stroke="#334155" stroke-width="1.5" marker-end="url(#uno)"/>
+  <text x="270" y="385" font-size="12" fill="#0a0e1a">1</text>
+  <text x="400" y="325" font-size="12" fill="#0a0e1a">N</text>
+
+  <line x1="720" y1="260" x2="860" y2="230" stroke="#334155" stroke-width="1.5" marker-end="url(#uno)"/>
+  <text x="730" y="255" font-size="12" fill="#0a0e1a">1</text>
+  <text x="840" y="225" font-size="12" fill="#0a0e1a">N</text>
+
+  <!-- Leyenda -->
+  <g transform="translate(30,760)">
+    <text font-size="12" fill="#334155">🔑 Llave primaria (PK)   🔗 Llave foránea (FK)   1—N: una marca/tipo tiene muchos dispositivos; un dispositivo tiene muchos comentarios</text>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f1f2f8"/>
+  <rect x="130" y="60" width="140" height="180" rx="14" fill="#fff" stroke="#9ca3af" stroke-width="6"/>
+  <text x="200" y="270" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#9ca3af">Sin imagen</text>
+</svg>
